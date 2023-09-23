@@ -1,0 +1,49 @@
+---
+const year = new Date().getFullYear()
+---
+
+<footer>
+    <span>{year} Lucas Sarachu. All rights reserved.</span>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/lucas-sarachu/" target="_blank">Linkedin</a></li>
+        <li><a href="https://github.com/LucasSA97" target="_blank">Github</a></li>
+    </ul>
+</footer>
+
+<style>
+    footer {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        width: calc(100% - 40px);
+        border-top: 1px solid rgb(30, 30, 30, 0.3);
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer > ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 30px;
+        padding: 0;
+    }
+
+    footer > ul > li > a {
+        color: #1e1e1e;
+        transition: all .3s;
+    }
+
+    footer > ul > li > a:hover {
+        color: rgb(0, 157, 255)
+    }
+
+    @media screen and (max-width: 700px) {
+        footer {
+            justify-content: center;
+        }
+    }
+</style>

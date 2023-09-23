@@ -1,0 +1,176 @@
+---
+import  Navbar  from '../components/Navbar.astro'
+import Button from '../components/Button.astro'
+import Title from '../components/Title.astro'
+import SkillCard from '../components/SkillCard.astro'
+import ProjectCard from '../components/ProjectCard.astro'
+import Footer from '../components/Footer.astro'
+import { ViewTransitions } from 'astro:transitions'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Lucas Sarachu Dev.</title>
+	</head>
+	<body>
+		<header>
+			<Navbar/>
+		</header>
+		<main>
+			<section class="about">
+				<img src="../../public/ship.jpg" alt="profile picture">
+				<article>
+					<p>Hola! Bienvenido a mi Portfolio</p>
+					<Title text="Software Developer from Argentina" />
+				</article>
+				<Button message='Latest Posts' icon='/external-link.svg' link='https://dev.to/slydragonn'/>
+			</section>
+			<section class="skills">
+				<Title text="Skills & Technologies"/>
+				<section>
+					<SkillCard
+					icon="" 
+					description="Frameworks"
+					title="Frontend Development" />
+					<SkillCard
+					icon="" 
+					description="Frameworks"
+					title="Frontend Development" />
+					<SkillCard
+					icon="" 
+					description="Frameworks"
+					title="Frontend Development" />
+				</section>
+			</section>
+			<section class="work">
+				<Title text="My work"/>
+			<section>
+				<ProjectCard 
+					title="SpaceX Launches"
+					description=""
+					link=""/>
+				<ProjectCard 
+					title="TaskList Firebase"
+					description=""
+					link=""/>
+				<ProjectCard 
+					title="E-Comerce"
+					description=""
+					link=""/>
+			</section>
+			</section>
+			<section class="contact">
+				<Title text="Contact me"/>
+				<Button message="Send" />
+			</section>
+		</main>
+		<Footer />
+		<!-- <ViewTransitions></ViewTransitions> -->
+	</body>
+</html>
+
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		box-sizing: border-box;
+		}
+
+		main {
+		margin: 50px auto 0 auto;
+		max-width: 1020px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 100px;
+	}
+
+	.about {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 40px;
+		width: 100%;
+		height: calc(100vh - 50px);
+		text-align: center;
+		border-bottom: 1px solid rgb(30, 30, 30, 0.3);
+		padding: 0 20px;
+	}
+
+	.about > img {
+		width: 200px;
+		border-radius: 9999px;
+		object-fit: cover;
+	}
+
+	.about > article {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+		width: 100%;
+		align-items: center;
+		border-bottom: 1px solid rgb(30, 30, 30, 0.3);
+		padding: 0px 20px 100px 20px;
+	}
+
+	.skills > section {
+		display: flex;
+		gap: 40px;
+		flex-wrap: wrap;
+		justify-content: center;
+	} 
+
+	.work {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+		width: 100%;
+		align-items: center;
+		border-bottom: 1px solid rgb(30, 30, 30, 0.3);
+		padding: 0px 20px 100px 20px;
+	}
+	
+	.work > section {
+		display: flex;
+		gap: 40px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.contact {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+		width: 100%;
+		padding: 0px 20px 100px 20px;
+	}
+
+	@media screen and (max-width: 700px) {
+		main {
+			margin: 0 auto;
+		}
+
+		.about {
+			height: 80vh;
+		}
+
+		.about > img {
+			width: 100px;
+		}
+	}
+
+</style>
