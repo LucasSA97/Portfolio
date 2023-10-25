@@ -1,44 +1,8 @@
 ---
 const { message, link, target } = Astro.props
 ---
-<a  class="link-btn shadow-md" target={target} href={link}>
-    <button class="btn rounded-md transform transition-transform hover:-translate-y-1  w-16 h-7">
-        <span class="text-white text-sm font-light">{message}</span>
+<a  class="link-btn shadow-md " target={target} href={link}>
+    <button class="rounded-md transform transition-transform hover:-translate-y-1  w-16 h-7">
+        <span class="text-black dark:text-white transition-all text-sm font-light">{message}</span>
     </button>
 </a>
-
-<!-- <style>
-    .link-btn {
-        text-decoration: none;
-    }
-    .btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        width: 70px;
-        height: 35px;
-        background-color: #1e1e1e;
-        border-radius: 10px;
-        border: none;
-        transition: all .3s;
-        cursor: pointer;
-        color: white;
-    }
-    .btn > span {
-        color: #fff;
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 400;
-    }
-    .btn > img {
-        width: 24px;
-    }
-    
-    .btn:hover {
-        transform: translateY(-5px);
-        
-    }
-
-   
-</style> -->
