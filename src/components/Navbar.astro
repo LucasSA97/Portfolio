@@ -1,75 +1,17 @@
-<nav class="navbar">
-    <span>Lucas Sarachu</span>
-    <ul>
-        <li><a href="">Linkedin</a></li>
-        <li><a href="">Github</a></li>
-        <li class="contact-btn"><a href="mailto:lucassarachu7@gmail.com">Contact</a></li>
+---
+import Button from "./Button.astro";
+import ThemeIcon from "./ThemeIcon.astro";
+import '../styles/global.css';
+
+---
+<nav transition:persist class="navbar fixed top-0 left-0 z-10 w-full h-16 bg-opacity-80 backdrop-blur-md backdrop-saturate-200 flex justify-around items-center p-4">
+    <span class="font-semibold">Lucas Sarachu.</span>
+    <ul class="flex items-center space-x-8 text-base">
+        <Button target="_blank" message="Linkedin" link="https://www.linkedin.com/in/lucas-sarachu/"/>
+        <Button target="_blank" message="Github" link="https://github.com/LucasSA97"/>
+        <Button target="_blank" message="Contacto" link="mailto:lucassarachu7@gmail.com"/>
+        <Button message="Skills" link="#skills"/>
+        <Button message="Proyectos" link="#proyectos"/>
     </ul>
+    <ThemeIcon />
 </nav>
-
-<style>
-    .navbar {
-        z-index: 10;
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: calc(100% - 40px);
-        height: 50px;
-        border-bottom: 1px solid rgb(30, 30, 30, .3);
-        background-color: rgb(255, 255, 255, .8);
-        backdrop-filter: blur(20px) saturate(200%);
-        padding: 0 20px;
-    }
-
-    .navbar > span {
-        font-weight: 600;
-    }
-
-    .navbar > ul {
-        display: flex;
-        align-items: center;
-        list-style: none;
-        gap: 30px;
-        font-size: 14px;
-    }
-
-    .navbar > ul > li > a {
-        color: #1e1e1e;
-        text-decoration: none;
-        transition: all .3s;
-    }
-    .navbar > ul > li > a:hover {
-        color: rgb(0, 157, 255) }
-
-    .navbar > ul > .contact-btn {
-        background-color: #1e1e1e;
-        padding: 5px 10px;
-        border-radius: 5px;
-    }
-
-    .navbar > ul > .contact-btn > a {
-        color: #fff;
-    }
-
-    @media screen and (max-width: 700px) {
-        .navbar {
-            position: static;
-            flex-direction: column;
-            height: auto;
-            justify-content: center;
-            align-items: center;
-            width: calc(100% - 20px);
-            padding: 10px;
-        }
-
-        .navbar > ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0;
-    }
-        
-    }
-</style>

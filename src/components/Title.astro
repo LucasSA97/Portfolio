@@ -2,23 +2,26 @@
 const { text } = Astro.props
 ---
 
-<h2 class="title">
+<h2  class="title max-w-[450px] text-4xl uppercase text-center font-medium text-[#191919]
+ bg-clip-text text-transparent bg-gradient-to-br from-[#bababa] to-[rgba(30, 30, 30, 0)]">
     {text}
 </h2>
 
-<style>
+<!-- <style>
     h2 {
         max-width: 450px;
         font-size: 40px;
         text-transform: uppercase;
         margin: 0;
-        color: #1e1e1e;
+        color: #191919;
         text-align: center;
         font-weight: 500;
-        background: linear-gradient(89.56deg, #1E1E1E 44.7%, rgba(30, 30, 30, 0) 137.42%);
+        background: linear-gradient(89.56deg, #bababa 44.7%, rgba(30, 30, 30, 0) 137.42%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
     }
-</style>
+
+
+</style> -->
