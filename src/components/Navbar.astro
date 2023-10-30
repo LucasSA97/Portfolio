@@ -4,9 +4,10 @@ import ThemeIcon from "./ThemeIcon.astro";
 import '../styles/global.css';
 
 ---
-<nav transition:persist class="navbar fixed top-0 left-0 z-10 w-full h-16 bg-opacity-80 backdrop-blur-md backdrop-saturate-200 flex justify-around items-center p-4">
-    <span class="font-semibold">Lucas Sarachu.</span>
-    <ul class="flex items-center space-x-8 text-base">
+<nav transition:persist class="navbar fixed top-0 left-0 z-10 w-full bg-opacity-80 backdrop-blur-md backdrop-saturate-200 p-4 flex flex-col sm:flex-row justify-between items-center">
+    <span class="font-semibold text-2xl dark:text-sky-300 text-blue-900 mb-4 sm:mb-0">Lucas Sarachu.</span>
+    <!-- <ul class="flex items-center space-x-8 text-base"> -->
+    <ul class="flex flex-wrap items-center space-x-2 sm:space-x-8 text-base sm:text-lg">
         <Button target="_blank" message="Linkedin" link="https://www.linkedin.com/in/lucas-sarachu/"/>
         <Button target="_blank" message="Github" link="https://github.com/LucasSA97"/>
         <Button target="_blank" message="Contacto" link="mailto:lucassarachu7@gmail.com"/>

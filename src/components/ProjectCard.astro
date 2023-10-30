@@ -1,16 +1,43 @@
 ---
-const { title, description, link } = Astro.props
+// interface Props {
+//     title: string;
+//     description: string;
+//     linkGit: string;
+//     linkWeb?: string;
+//     img: string; 
+// }
+const { title, description, linkGit, linkWeb, name, img } = Astro.props
 ---
 
-<article class="project-card">
-    <h3>{title}</h3>
-    <div>
-        <a href={link} target="_blank">
-            <p>{description}</p>
-        </a>
+<!-- <article class="project-card w-2/5 h-96 transition-all  bg-blue-100 shadow-xl  dark:bg-blue-900 rounded-lg text-black  dark:text-white  border-solid border-2 border-zinc-800 dark:border-solid dark:border-2 dark:border-zinc-200"> -->
+<article class="project-card sm:w-2/5 md:w-1/2 lg:w-1/3 xl:w-1/3 h-auto transition-all bg-blue-100 shadow-xl dark:bg-blue-900 rounded-lg text-black dark:text-white border-solid border-2 border-zinc-800 dark:border-solid dark:border-2 dark:border-zinc-200"> 
+    <img src={img} alt="Project Picture" class="w-full h-56 rounded mb-2">
+    <div class="flex flex-col items-center">
+        <div class="text-center">
+            <h3 class="text-xl md:text-2xl font-semibold text-uppercase mb-2">{title}</h3>
+            <p class="dark:text-white text-black transition-all font-medium text-sm md:text-base max-h-50">{description}</p>
+        </div>
+        <div class="relative">
+            <a href={linkGit} target="_blank" class="inline-block px-3 py-2 m-2 dark:bg-sky-300 bg-blue-900 text-white rounded-lg font-medium text-sm md:text-md dark:text-black transition duration-300 hover:font-semibold dark:hover:bg-slate-400 hover:bg-slate-800 hover:text-white">
+            Código
+            </a>
+            <a href={linkWeb} target="_blank"  class="inline-block px-3 py-2 m-2 dark:bg-sky-300 bg-blue-900 text-white rounded-lg font-medium text-sm md:text-md dark:text-black transition duration-300 hover:font-semibold dark:hover:bg-slate-400 hover:bg-slate-800 hover:text-white">
+            {name ? "Web" : "No link"}
+            </a>
+        </div>
     </div>
 </article>
 
+<!-- <article class="project-card flex flex-col justify-end w-64 h-52 p-5 bg-gray-900 rounded-lg text-white">
+    <h3 class="text-2xl font-semibold text-uppercase">{title}</h3>
+    <img class="mt-2" src={img} alt="projects picture">
+    <div class="border-t border-white mt-2">
+        <a href={link} target="_blank" class="text-white font-light text-sm transition duration-300 hover:font-semibold">
+            <p>{description}</p>
+        </a>
+    </div>
+</article> -->
+<!-- 
 <style>
     .project-card {
         display: flex;
@@ -44,7 +71,5 @@ const { title, description, link } = Astro.props
         transition: all .3s;
     }
 
-    .project-card > div > a:hover {
-        color: orange;
-    }
-</style>
+   
+</style> -->

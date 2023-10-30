@@ -15,16 +15,16 @@ import '../styles/global.css';
 
 	<main>
 		<section class="about">
+			<p class="font-semibold mb-27 text-4xl dark:bg-gradient-to-br dark:from-red-300 dark:to-blue-400 bg-gradient-to-br from-red-800 to-blue-900 text-transparent bg-clip-text transition-all">Hola! Bienvenido a mi Portfolio</p>
 			<img src="../../public/ship.jpg" alt="profile picture">
 			<article>
-				<p>Hola! Bienvenido a mi Portfolio</p>
 				<Title text="Software Developer" />
 				<!-- CONTAR SOBRE MI ACA -->
-				<p>Sobre mi</p>
+				<p class="mt-40">Sobre mi</p>
 			</article>
 		</section>
 		<section id="skills"  class="skills">
-			<Title  text="Skills & Tecnologías"/>
+			<Title  text="Tecnologías"/>
 			<section>
 				<SkillCard
 				icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" 			
@@ -65,20 +65,47 @@ import '../styles/global.css';
 			</section>
 		</section>
 		<section id="proyectos" class="work">
-			<Title text="My work"/>
+			<Title text="Mis proyectos"/>
 		<section>
 			<ProjectCard 
+			    img="../../public/CapturaSpaceX.png"
 				title="SpaceX Launches"
-				description=""
-				link=""/>
+				description="App de los lanzamientos de SpaceX desarrollado con Astro"
+				linkGit="https://github.com/LucasSA97/SpaceX-Launches"
+				linkWeb="https://primer-proyecto-demo.vercel.app/"
+				name
+				/>
 			<ProjectCard 
-				title="TaskList Firebase"
-				description=""
-				link=""/>
+					img="../../public/Thewave.png"
+					title="E-Comerce"
+					description="Trabajo en equipo"
+					linkGit="https://github.com/Fiorellafrini/Proyecto_TheWave_client"
+					linkWeb="https://proyecto-the-wave-client-1kip.vercel.app/SectionHome"
+					name
+					/>
 			<ProjectCard 
-				title="E-Comerce"
-				description=""
-				link=""/>
+			    img="../../public/LandingTesta.png"
+				title="Landing Tesla"
+				description="Clon desarrollado con Astro y TailwindCSS"
+				linkGit="https://github.com/LucasSA97/landing-page-tesla"
+				
+				/>
+			<ProjectCard 
+			    img="../../public/SpotifyClon.png"
+				title="Spotify Demo Clon"
+				description="Demo de Spotify desarrollado con Astro y TailwindCSS"
+				linkGit="https://github.com/LucasSA97/spotify-clon"
+				linkWeb="https://spotify-clon-demo-astro.vercel.app/"
+				name
+				/>
+			<ProjectCard 
+			    img="../../public/fireTask.png"
+				title="FireTasks"
+				description="Proyecto de lista de tareas desarrollado con React"
+				linkGit="https://github.com/LucasSA97/task-list-firebase"
+				linkWeb="https://fir-shop-7d55b.web.app/"
+				name
+				/>
 		</section>
 		</section>
 		
