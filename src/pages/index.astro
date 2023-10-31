@@ -1,12 +1,17 @@
 ---
-import  Navbar  from '../components/Navbar.astro'
-import Button from '../components/Button.astro'
+
 import Title from '../components/Title.astro'
 import SkillCard from '../components/SkillCard.astro'
 import ProjectCard from '../components/ProjectCard.astro'
-import Footer from '../components/Footer.astro'
 import Layout from '../layouts/Layout.astro'
 import '../styles/global.css';
+import astroImage from "../assets/CapturaSpaceX.png"
+import fireImage from "../assets/fireTask.png"
+import countriesImage from "../assets/ProyectoCountry.png"
+import spotyImage from "../assets/SpotifyClon.png"
+import theWaveImage from "../assets/Thewave.png"
+import teslaImage from "../assets/LandingTesta.png"
+import shipImage from "../assets/ship.jpg"
 
 
 ---
@@ -16,7 +21,7 @@ import '../styles/global.css';
 	<main>
 		<section class="about">
 			<p class="font-semibold mb-27 text-4xl dark:bg-gradient-to-br dark:from-red-300 dark:to-blue-400 bg-gradient-to-br from-red-800 to-blue-900 text-transparent bg-clip-text transition-all">Hola! Bienvenido a mi Portfolio</p>
-			<img src="../../public/ship.jpg" alt="profile picture">
+			<img src={shipImage.src} alt="profile picture">
 			<article>
 				<Title text="Software Developer" />
 				<!-- CONTAR SOBRE MI ACA -->
@@ -68,50 +73,48 @@ import '../styles/global.css';
 			<Title text="Mis proyectos"/>
 		<section>
 			<ProjectCard 
-			    img="../../public/CapturaSpaceX.png"
-				title="SpaceX Launches"
-				description="App de los lanzamientos de SpaceX desarrollado con Astro"
-				linkGit="https://github.com/LucasSA97/SpaceX-Launches"
-				linkWeb="https://primer-proyecto-demo.vercel.app/"
-				name
-				/>
-			<ProjectCard 
-					img="../../public/Thewave.png"
-					title="E-Comerce"
-					description="Trabajo en equipo"
+					img={theWaveImage.src}
+					title="The Wave Store Comerce"
+					description="E-Comerce desarrollado en equipo desarrollado el front con JavaScript, React, Redux, HTML, CSS, y backend con Express y Node y base de datos SQL."
 					linkGit="https://github.com/Fiorellafrini/Proyecto_TheWave_client"
 					linkWeb="https://proyecto-the-wave-client-1kip.vercel.app/SectionHome"
 					name
 					/>
 			<ProjectCard 
-			    img="../../public/LandingTesta.png"
+			    img={astroImage.src}
+				title="SpaceX Launches"
+				description="App con los lanzamientos de SpaceX desarrollado con Astro, TypeScript, JavaScript y TailwindCSS."
+				linkGit="https://github.com/LucasSA97/SpaceX-Launches"
+				linkWeb="https://primer-proyecto-demo.vercel.app/"
+				name
+				/>
+				<ProjectCard 
+					img={fireImage.src}
+					title="FireTasks"
+					description="Proyecto de lista de tareas desarrollado con React"
+					linkGit="https://github.com/LucasSA97/task-list-firebase"
+					linkWeb="https://fir-shop-7d55b.web.app/"
+					name
+					/>
+					<ProjectCard 
+						img={spotyImage.src}
+						title="Spotify Demo Clon"
+						description="Demo de SpotifyClon desarrollado con Astro, JavaScript, TypeScript, TailwindCSS, React y Svelte."
+						linkGit="https://github.com/LucasSA97/spotify-clon"
+						linkWeb="https://spotify-clon-demo-astro.vercel.app/"
+						name
+						/>
+			<ProjectCard 
+			    img={teslaImage.src}
 				title="Landing Tesla"
-				description="Clon desarrollado con Astro y TailwindCSS"
+				description="Clon de la Landing page de Tesla desarrollado con HTML, CSS, JavaScript, Astro y Tailwind."
 				linkGit="https://github.com/LucasSA97/landing-page-tesla"
-				
 				/>
 			<ProjectCard 
-			    img="../../public/SpotifyClon.png"
-				title="Spotify Demo Clon"
-				description="Demo de Spotify desarrollado con Astro y TailwindCSS"
-				linkGit="https://github.com/LucasSA97/spotify-clon"
-				linkWeb="https://spotify-clon-demo-astro.vercel.app/"
-				name
-				/>
-			<ProjectCard 
-			    img="../../public/fireTask.png"
-				title="FireTasks"
-				description="Proyecto de lista de tareas desarrollado con React"
-				linkGit="https://github.com/LucasSA97/task-list-firebase"
-				linkWeb="https://fir-shop-7d55b.web.app/"
-				name
-				/>
-			<ProjectCard 
-			    img="../../public/ProyectoCountry.png"
+			    img={countriesImage.src}
 				title="Search Country"
 				description="Proyecto individual, CRUD"
-				linkGit="https://github.com/LucasSA97/Proyecto-Countries"
-				
+				linkGit="https://github.com/LucasSA97/Proyecto-Countries"	
 				/>
 		</section>
 		</section>
