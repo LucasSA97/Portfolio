@@ -6,9 +6,6 @@
 
     }
     
-    
-    
-    
     html {
         background-color: #e6f9fa;
         transition: .3s ease all;
@@ -46,9 +43,10 @@
 	}
 
 	.about > img {
-		width: 200px;
+		width: 300px;
 		border-radius: 9999px;
 		object-fit: cover;
+        margin-right: 25px;
 	}
 
 	.about > article {

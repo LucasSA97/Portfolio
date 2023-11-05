@@ -12,6 +12,7 @@ import spotyImage from "../assets/SpotifyClon.png"
 import theWaveImage from "../assets/Thewave.png"
 import teslaImage from "../assets/LandingTesta.png"
 import shipImage from "../assets/ship.jpg"
+import fotoMia from "../assets/fotoMia.jpeg"
 
 ---
 
@@ -19,19 +20,26 @@ import shipImage from "../assets/ship.jpg"
 
 	<main>
 		<section class="about">
-			<p class="font-semibold mb-27 text-3xl bg-black text-transparent bg-clip-text transition-all dark:bg-white"
+			<!-- <p class="font-semibold mb-27 text-3xl bg-black text-transparent bg-clip-text transition-all dark:bg-white"
 			> ¡Hola! Soy 
-		    </p>
-			<p class="font-semibold font-mono mb-27 tracking-widest text-6xl bg-black text-transparent bg-clip-text transition-all dark:bg-white"><strong>Lucas Sarachu </strong> </p>
-			<img src={shipImage.src} alt="profile picture">
-			<article>
-				<Title text="Software Developer" />
+		    </p> -->
+			<p class="mb-27 tracking-widest text-6xl bg-black text-transparent bg-clip-text transition-all dark:bg-white"><strong>Lucas Sarachu </strong> </p>
+			<img src={fotoMia.src} class="mb-11" alt="profile picture">
+			<article id="sobremi">
+				<p class="mb-27 tracking-widest text-5xl bg-black  bg-clip-text  transition-transform dark:bg-white">Software Developer</p>
+				<!-- <Title text="Software Developer" /> -->
 				<!-- CONTAR SOBRE MI ACA -->
-				<p id="sobremi" class="mt-40">sobremisobremisobremisobremisobremisobremisobremisobremisobremisobremisobremi</p>
+				<p class="mt-20"> Soy desarrollador Fullstack competente con background en Educación Física y entrenador personal. Esta experiencia me ayudo a adquirir habilidades blandas que puedo aplicar en la programación en equipo. 
+					Como programador trabajé en la creación de aplicaciones web completas. Con habilidades técnicas tanto en Front, trabajando con JavaScript, React, Angular, CSS y demás frameworks como Ionic, Tailwind y Astro como en el Back usando Node.js con ExpressJS, así como experiencia en el manejo de bases de datos y herramientas de desarrollo con SQL. 
+					
+					Soy una persona que le gusta el trabajo en equipo, con empatía y me adapto a las circunstancias sin 
+					problema, con buena comunicación y actitud positiva. </p>
 			</article>
 		</section>
 		<section id="skills"  class="skills">
-			<Title  text="Tecnologías"/>
+			<!-- <Title  text="Tecnologías"/> -->
+			<p class="mb-28 tracking-widest text-5xl bg-black  bg-clip-text transition-transform dark:bg-white">Tecnologías</p>
+
 			<section>
 				<SkillCard
 				icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" 			
@@ -72,7 +80,8 @@ import shipImage from "../assets/ship.jpg"
 			</section>
 		</section>
 		<section id="proyectos" class="work">
-			<Title text="Mis proyectos"/>
+			<!-- <Title text="Mis proyectos"/> -->
+			<p class="mb-27 tracking-widest text-5xl bg-black  bg-clip-text  transition-transform dark:bg-white">Mis Proyectos</p>
 		<section>
 			<ProjectCard 
 					img={theWaveImage.src}
