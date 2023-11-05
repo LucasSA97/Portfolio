@@ -5,14 +5,23 @@ import '../styles/global.css';
 
 ---
 <nav transition:persist class="navbar fixed top-0 left-0 z-10 w-full bg-opacity-80 backdrop-blur-md backdrop-saturate-200 p-4 flex justify-center flex-col  items-center mx-auto">
-    <!-- <span class="font-semibold text-2xl dark:text-sky-300 text-blue-900 mb-4 sm:mb-0">Lucas Sarachu.</span> -->
-    <!-- <ul class="flex items-center space-x-8 text-base"> -->
     <ul class="flex flex-wrap items-center space-x-2 sm:space-x-8 text-base sm:text-lg">
-        <Button target="_blank" message="Linkedin" link="https://www.linkedin.com/in/lucas-sarachu/"/>
-        <Button target="_blank" message="Github" link="https://github.com/LucasSA97"/>
-        <Button target="_blank" message="Contacto" link="mailto:lucassarachu7@gmail.com"/>
+        <Button message="Sobre Mi" link="#sobremi" />
         <Button message="Skills" link="#skills"/>
         <Button message="Proyectos" link="#proyectos"/>
+        <a target="_blank"  href="https://github.com/LucasSA97">
+            <i class="fa-brands fa-github text-3xl" ></i>
+        </a>
+        <a target="_blank"  href="https://www.linkedin.com/in/lucas-sarachu/">
+            <i class="fa-brands fa-linkedin text-3xl"></i>
+        </a>
+        <a target="_blank"  href="mailto:lucassarachu7@gmail.com">
+            <i class="fa-solid fa-envelope text-3xl"></i>
+        </a>
         <ThemeIcon />
     </ul>
 </nav>
+
+<!-- <Button target="_blank" message="Linkedin" link="https://www.linkedin.com/in/lucas-sarachu/"/> -->
+<!-- <Button target="_blank" message="Github" link="https://github.com/LucasSA97"/> -->
+<!-- <Button target="_blank" message="Contacto" link="mailto:lucassarachu7@gmail.com"/> -->

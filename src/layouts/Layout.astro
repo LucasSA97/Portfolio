@@ -20,6 +20,8 @@ import favIconImage from "../assets/favicon.svg"
         <noscript><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pacifico&display=swap" rel="stylesheet"></noscript>        
         <meta name="generator" content={Astro.generator} />
         <title>{pageTitle}</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <ViewTransitions />
 	</head>
 	<body>
@@ -30,22 +32,6 @@ import favIconImage from "../assets/favicon.svg"
 	    <slot />
         <Footer />
         </main>
-        <!-- <script>
-                 function colorMode() {
-                if (
-                    localStorage.theme === "light" ||
-                    (!("theme" in localStorage) &&
-                    window.matchMedia("(prefers-color-scheme: light)").matches)
-                ) {
-                    document.documentElement.classList.add("light");
-                } else {
-                    document.documentElement.classList.remove("light");
-                }
-              }
-            
-            colorMode();
-            document.addEventListener('astro:after-swap', colorMode);
-        </script> -->
 	</body>
 </html>
 
