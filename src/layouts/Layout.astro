@@ -24,10 +24,12 @@ import favIconImage from "../assets/favicon.svg"
 
         <ViewTransitions />
 	</head>
+        <header class="max-w-screen-lg">
+                <Navbar />
+        </header>
 	<body>
-
         <main transition:animate={fade({ duration: '0.4s' })} >
-	    <slot />
+	    <slot/>
         <Footer />
         </main>
 	</body>
