@@ -1,5 +1,5 @@
 ---
-
+import Navbar from '../components/Navbar.astro';
 import Title from '../components/Title.astro'
 import SkillCard from '../components/SkillCard.astro'
 import ProjectCard from '../components/ProjectCard.astro'
@@ -17,28 +17,29 @@ import fotoMia from "../assets/fotoMia.jpeg"
 ---
 
 <Layout>
-
+	<header>
+		<Navbar />
+	</header>
 	<main>
-		<section class="about">
-			<!-- <p class="font-semibold mb-27 text-3xl bg-black text-transparent bg-clip-text transition-all dark:bg-white"
+		<section class="about text-center">
+			
+			<p class="font-semibold text-2xl md:text-3xl lg:text-4xl mt-8 md:mt-16 lg:mt-20 bg-black text-transparent bg-clip-text transition-all dark:bg-white"
 			> ¡Hola! Soy 
-		    </p> -->
-			<p class="mb-27 tracking-widest text-6xl bg-black text-transparent bg-clip-text transition-all dark:bg-white"><strong>Lucas Sarachu </strong> </p>
-			<img src={fotoMia.src} class="mb-11" alt="profile picture">
-			<article id="sobremi">
+		    </p>
+			<p class="mb-4 md:mb-10 lg:mb-27 tracking-widest text-4xl md:text-6xl lg:text-7xl bg-black text-transparent bg-clip-text transition-all dark:bg-white"><strong>Lucas Sarachu </strong> </p>
+			<img src={fotoMia.src} class="mb-8 md:mb-12 lg:mb-14" alt="profile picture">
+			<article id="sobremi" class="text-center">
 				<p class="mb-27 tracking-widest text-5xl bg-black  bg-clip-text  transition-transform dark:bg-white">Software Developer</p>
-				<!-- <Title text="Software Developer" /> -->
-				<!-- CONTAR SOBRE MI ACA -->
-				<p class="mt-20"> Soy desarrollador Fullstack competente con background en Educación Física y entrenador personal. Esta experiencia me ayudo a adquirir habilidades blandas que puedo aplicar en la programación en equipo. 
+				<p class="mt-4 md:mt-28"> Soy desarrollador Fullstack competente con background en Educación Física y entrenador personal. Esta experiencia me ayudo a adquirir habilidades blandas que puedo aplicar en la programación en equipo. 
 					Como programador trabajé en la creación de aplicaciones web completas. Con habilidades técnicas tanto en Front, trabajando con JavaScript, React, Angular, CSS y demás frameworks como Ionic, Tailwind y Astro como en el Back usando Node.js con ExpressJS, así como experiencia en el manejo de bases de datos y herramientas de desarrollo con SQL. 
 					
 					Soy una persona que le gusta el trabajo en equipo, con empatía y me adapto a las circunstancias sin 
 					problema, con buena comunicación y actitud positiva. </p>
 			</article>
 		</section>
-		<section id="skills"  class="skills">
+		<section id="skills"  class="skills mt-10">
 			<!-- <Title  text="Tecnologías"/> -->
-			<p class="mb-28 tracking-widest text-5xl bg-black  bg-clip-text transition-transform dark:bg-white">Tecnologías</p>
+			<p class="mb-15 mt-20 tracking-widest text-5xl bg-black  bg-clip-text transition-transform dark:bg-white">Tecnologías</p>
 
 			<section>
 				<SkillCard
@@ -129,8 +130,7 @@ import fotoMia from "../assets/fotoMia.jpeg"
 				/>
 		</section>
 		</section>
-		
-		
+			
 	</main>
 	
 </Layout>
@@ -150,7 +150,6 @@ import fotoMia from "../assets/fotoMia.jpeg"
 		gap: 50px;
 		width: 100%;
 		align-items: center;
-		border-bottom: 1px solid rgb(30, 30, 30, 0.3);
 		padding: 0px 20px 100px 20px;
 	}
 
@@ -167,7 +166,6 @@ import fotoMia from "../assets/fotoMia.jpeg"
 		gap: 50px;
 		width: 100%;
 		align-items: center;
-		border-bottom: 1px solid rgb(30, 30, 30, 0.3);
 		padding: 0px 20px 100px 20px;
 	}
 	

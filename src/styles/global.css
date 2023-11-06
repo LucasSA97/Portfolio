@@ -38,12 +38,11 @@
 		width: 100%;
 		height: calc(100vh - 50px);
 		text-align: center;
-		border-bottom: 1px solid rgb(30, 30, 30, 0.3);
 		padding: 0 20px;
 	}
 
 	.about > img {
-		width: 300px;
+		width: 350px;
 		border-radius: 9999px;
 		object-fit: cover;
         margin-right: 25px;
