@@ -17,6 +17,8 @@ import react from "../assets/react.svg"
 import tailwind from "../assets/tailwind-css.svg"
 import node from "../assets/nodejs.svg"
 import astro from "../assets/astro2.svg"
+import angular from "../assets/angular.svg"
+import mongodb from "../assets/mongodb.svg"
 
 ---
 
@@ -71,6 +73,12 @@ import astro from "../assets/astro2.svg"
 				icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"
 				title="PostgreSQL" />
 				<SkillCard
+				icon={angular.src}
+				title="Angular" />
+				<SkillCard
+				icon={mongodb.src}
+				title="MongoDB" />
+				<SkillCard
 				icon={tailwind.src}
 				title="TailwindCSS" />
 				<SkillCard
@@ -86,27 +94,27 @@ import astro from "../assets/astro2.svg"
 			<p class="mb-27 tracking-widest text-5xl bg-black bg-clip-text transition-transform dark:bg-white">Mis Proyectos</p>
 		<section >
 			<ProjectCard 
+			img={astroImage.src}
+			title="SpaceX Launches"
+			description="App con los lanzamientos de SpaceX desarrollado con Astro, TypeScript, JavaScript y TailwindCSS."
+			linkGit="https://github.com/LucasSA97/SpaceX-Launches"
+			linkWeb="https://primer-proyecto-demo.vercel.app/"
+			name
+			/>
+			<ProjectCard 
+			img={fireImage.src}
+			title="FireTasks"
+			description="Proyecto de lista de tareas desarrollado con React, testing End to End con Cypress y backend en Firebase."
+			linkGit="https://github.com/LucasSA97/task-list-firebase"
+			linkWeb="https://fir-shop-7d55b.web.app/"
+			name
+			/>
+			<ProjectCard 
 					img={theWaveImage.src}
 					title="The Wave Store Comerce"
 					description="E-Comerce desarrollado en equipo. El front hecho JavaScript, React, Redux, HTML y puro CSS. El backend con Express y Node y base de datos SQL."
 					linkGit="https://github.com/Fiorellafrini/Proyecto_TheWave_client"
 					linkWeb="https://proyecto-the-wave-client-1kip.vercel.app/SectionHome"
-					name
-					/>
-			<ProjectCard 
-			    img={astroImage.src}
-				title="SpaceX Launches"
-				description="App con los lanzamientos de SpaceX desarrollado con Astro, TypeScript, JavaScript y TailwindCSS."
-				linkGit="https://github.com/LucasSA97/SpaceX-Launches"
-				linkWeb="https://primer-proyecto-demo.vercel.app/"
-				name
-				/>
-				<ProjectCard 
-					img={fireImage.src}
-					title="FireTasks"
-					description="Proyecto de lista de tareas desarrollado con React, testing End to End con Cypress y backend en Firebase."
-					linkGit="https://github.com/LucasSA97/task-list-firebase"
-					linkWeb="https://fir-shop-7d55b.web.app/"
 					name
 					/>
 					<ProjectCard 
