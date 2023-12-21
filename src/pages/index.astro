@@ -5,6 +5,7 @@ import SkillCard from '../components/SkillCard.astro'
 import ProjectCard from '../components/ProjectCard.astro'
 import Layout from '../layouts/Layout.astro'
 import '../styles/global.css';
+
 import astroImage from "../assets/CapturaSpaceX.png"
 import fireImage from "../assets/fireTask.png"
 import countriesImage from "../assets/ProyectoCountry.png"
@@ -13,6 +14,8 @@ import theWaveImage from "../assets/Thewave.png"
 import teslaImage from "../assets/LandingTesta.png"
 import shipImage from "../assets/ship.jpg"
 import fotoMia from "../assets/fotoMia.jpeg"
+import agenciaViajes from "../assets/agenciaviajes.png"
+
 import react from "../assets/react.svg"
 import tailwind from "../assets/tailwind-css.svg"
 import node from "../assets/nodejs.svg"
@@ -106,9 +109,17 @@ import mongodb from "../assets/mongodb.svg"
 			<ProjectCard 
 			img={fireImage.src}
 			title="FireTasks"
-			description="Proyecto de lista de tareas desarrollado con React, testing End to End con Cypress y backend en Firebase."
+			description="Proyecto de lista de tareas con autenticación desarrollado con React, testing End to End con Cypress y backend en Firebase."
 			linkGit="https://github.com/LucasSA97/task-list-firebase"
 			linkWeb="https://fir-shop-7d55b.web.app/"
+			name
+			/>
+			<ProjectCard 
+			img={agenciaViajes.src}
+			title="Agencia de Viajes"
+			description="Proyecto con distintos destinos y página de testimonios con formulario validado. Desarrollado con JavaScript, backend con Node y Express, base de datos MySQL, frontend hecho con PUG."
+			linkGit="https://github.com/LucasSA97/Agencia-Viajes"
+			linkWeb="https://agencia-viajes-0fs4.onrender.com/"
 			name
 			/>
 			<ProjectCard 
@@ -127,17 +138,17 @@ import mongodb from "../assets/mongodb.svg"
 						linkWeb="https://spotify-clon-demo-astro.vercel.app/"
 						name
 						/>
+						<ProjectCard 
+							img={countriesImage.src}
+							title="Search Country"
+							description="Proyecto individual con todos los paises, paginado, filtrado combinado y creacion de actividades. CRUD desarrollado en el frontend con JavaScript, React y CSS. Backend con Node y Express. Base de datos PostgreSQL"
+							linkGit="https://github.com/LucasSA97/Proyecto-Countries"	
+							/>
 			<ProjectCard 
 			    img={teslaImage.src}
 				title="Landing Tesla"
 				description="Clon de la Landing page de Tesla desarrollado con HTML, CSS, JavaScript, Astro y Tailwind."
 				linkGit="https://github.com/LucasSA97/landing-page-tesla"
-				/>
-			<ProjectCard 
-			    img={countriesImage.src}
-				title="Search Country"
-				description="Proyecto individual, CRUD. Front con JavaScript, React y CSS. Backend con Node y Express."
-				linkGit="https://github.com/LucasSA97/Proyecto-Countries"	
 				/>
 		</section>
 		</section>
