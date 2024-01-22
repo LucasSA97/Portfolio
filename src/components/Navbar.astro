@@ -4,8 +4,8 @@ import ThemeIcon from "./ThemeIcon.astro";
 import '../styles/global.css';
 import LucasSarachuDev from "../assets/LucasSarachuDev.pdf"
 ---
-<nav transition:persist class="navbar fixed top-0 left-0 z-10 w-full bg-opacity-80 backdrop-blur-xl backdrop-saturate-200 p-4 flex justify-center flex-col  items-center mx-auto ">
-    <ul class="flex flex-wrap items-center space-x-2 sm:space-x-8 text-base sm:text-lg">
+<nav transition:persist class="navbar fixed top-0 left-0 z-10 w-full bg-opacity-80 backdrop-blur-xl backdrop-saturate-200 p-2 sm:p-4 flex justify-center items-center mx-full">
+    <ul class="flex flex-wrap items-center space-x-2 sm:space-x-4 text-xs sm:text-base">
         <Button message="Sobre Mi" link="#sobremi" />
         <Button message="Skills" link="#skills"/>
         <Button message="Proyectos" link="#proyectos"/>
@@ -21,6 +21,6 @@ import LucasSarachuDev from "../assets/LucasSarachuDev.pdf"
         <a target="_blank" href={LucasSarachuDev} download="LucasSarachuDev.pdf">
             <i class="fa fa-user-circle text-3xl" aria-hidden="true"></i>
         </a>
-        <ThemeIcon />
+        <ThemeIcon  />
     </ul>
 </nav>

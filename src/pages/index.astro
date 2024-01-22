@@ -45,9 +45,73 @@ import mongodb from "../assets/mongodb.svg"
 				</p>
 			</article>
 		</section>
-		<section id="skills"  class="skills mt-10">
+		<section id="proyectos" class="work mt10">
+			<!-- <Title text="Mis proyectos"/> -->
+			<p class="mb-27 mt-15 text-center tracking-widest text-5xl bg-black bg-clip-text transition-transform dark:bg-white">Mis Proyectos</p>
+		<section class="flex flex-col gap-y-16">
+			<ProjectCard 
+			img={agenciaViajes.src}
+			title="Agencia de Viajes"
+			description="Proyecto con distintos destinos y página de testimonios con formulario validado. Desarrollado con JavaScript, backend con Node y Express, base de datos MySQL, frontend hecho con PUG."
+			linkGit="https://github.com/LucasSA97/Agencia-Viajes"
+			linkWeb="https://agencia-viajes-0fs4.onrender.com/"
+			name
+			/>
+
+			<ProjectCard 
+			img={astroImage.src}
+			title="SpaceX Launches"
+			description="App con los lanzamientos de SpaceX desarrollado con Astro, TypeScript, JavaScript y TailwindCSS."
+			linkGit="https://github.com/LucasSA97/SpaceX-Launches"
+			linkWeb="https://primer-proyecto-demo.vercel.app/"
+			name
+			/>
+			<ProjectCard 
+			img={theWaveImage.src}
+			title="The Wave Store Comerce"
+			description="E-Comerce desarrollado en equipo. El front hecho JavaScript, React, Redux, HTML y puro CSS. El backend con Express y Node y base de datos SQL."
+			linkGit="https://github.com/Fiorellafrini/Proyecto_TheWave_client"
+			linkWeb="https://proyecto-the-wave-client-1kip.vercel.app/SectionHome"
+			name
+	/>
+
+			<ProjectCard 
+			img={spotyImage.src}
+			title="Spotify Demo Clon"
+			description="Demo de SpotifyClon desarrollado con Astro, JavaScript, TypeScript, TailwindCSS, React y Svelte."
+			linkGit="https://github.com/LucasSA97/spotify-clon"
+			linkWeb="https://spotify-clon-demo-astro.vercel.app/"
+			name
+/>
+
+			<ProjectCard 
+			img={teslaImage.src}
+			title="Landing Tesla"
+			description="Clon de la Landing page de Tesla desarrollado con HTML, CSS, JavaScript, Astro y Tailwind."
+			linkGit="https://github.com/LucasSA97/landing-page-tesla"
+			/>
+			<ProjectCard 
+			img={fireImage.src}
+			title="FireTasks"
+			description="Proyecto de lista de tareas con autenticación desarrollado con React, testing End to End con Cypress y backend en Firebase."
+			linkGit="https://github.com/LucasSA97/task-list-firebase"
+			linkWeb="https://fir-shop-7d55b.web.app/"
+			name
+			/>
+
+
+			<ProjectCard 
+							img={countriesImage.src}
+							title="Search Country"
+							description="Proyecto individual con todos los paises, paginado, filtrado combinado y creacion de actividades. CRUD desarrollado en el frontend con JavaScript, React y CSS. Backend con Node y Express. Base de datos PostgreSQL"
+							linkGit="https://github.com/LucasSA97/Proyecto-Countries"	
+			/>
+
+		</section>
+		</section>
+				<section id="skills"  class="skills mt-5">
 			<!-- <Title  text="Tecnologías"/> -->
-			<p class="mb-15 mt-20 tracking-widest text-5xl bg-black  bg-clip-text transition-transform dark:bg-white">Tecnologías</p>
+			<p class="mb-5  tracking-widest text-5xl bg-black text-center  bg-clip-text transition-transform dark:bg-white">Algunas Tecnologías</p>
 
 			<section>
 				<SkillCard
@@ -93,64 +157,6 @@ import mongodb from "../assets/mongodb.svg"
 				icon="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
 				title="Redux" />
 			</section>
-		</section>
-		<section id="proyectos" class="work">
-			<!-- <Title text="Mis proyectos"/> -->
-			<p class="mb-27 tracking-widest text-5xl bg-black bg-clip-text transition-transform dark:bg-white">Mis Proyectos</p>
-		<section >
-			<ProjectCard 
-			img={astroImage.src}
-			title="SpaceX Launches"
-			description="App con los lanzamientos de SpaceX desarrollado con Astro, TypeScript, JavaScript y TailwindCSS."
-			linkGit="https://github.com/LucasSA97/SpaceX-Launches"
-			linkWeb="https://primer-proyecto-demo.vercel.app/"
-			name
-			/>
-			<ProjectCard 
-			img={fireImage.src}
-			title="FireTasks"
-			description="Proyecto de lista de tareas con autenticación desarrollado con React, testing End to End con Cypress y backend en Firebase."
-			linkGit="https://github.com/LucasSA97/task-list-firebase"
-			linkWeb="https://fir-shop-7d55b.web.app/"
-			name
-			/>
-			<ProjectCard 
-			img={agenciaViajes.src}
-			title="Agencia de Viajes"
-			description="Proyecto con distintos destinos y página de testimonios con formulario validado. Desarrollado con JavaScript, backend con Node y Express, base de datos MySQL, frontend hecho con PUG."
-			linkGit="https://github.com/LucasSA97/Agencia-Viajes"
-			linkWeb="https://agencia-viajes-0fs4.onrender.com/"
-			name
-			/>
-			<ProjectCard 
-					img={theWaveImage.src}
-					title="The Wave Store Comerce"
-					description="E-Comerce desarrollado en equipo. El front hecho JavaScript, React, Redux, HTML y puro CSS. El backend con Express y Node y base de datos SQL."
-					linkGit="https://github.com/Fiorellafrini/Proyecto_TheWave_client"
-					linkWeb="https://proyecto-the-wave-client-1kip.vercel.app/SectionHome"
-					name
-					/>
-					<ProjectCard 
-						img={spotyImage.src}
-						title="Spotify Demo Clon"
-						description="Demo de SpotifyClon desarrollado con Astro, JavaScript, TypeScript, TailwindCSS, React y Svelte."
-						linkGit="https://github.com/LucasSA97/spotify-clon"
-						linkWeb="https://spotify-clon-demo-astro.vercel.app/"
-						name
-						/>
-						<ProjectCard 
-							img={countriesImage.src}
-							title="Search Country"
-							description="Proyecto individual con todos los paises, paginado, filtrado combinado y creacion de actividades. CRUD desarrollado en el frontend con JavaScript, React y CSS. Backend con Node y Express. Base de datos PostgreSQL"
-							linkGit="https://github.com/LucasSA97/Proyecto-Countries"	
-							/>
-			<ProjectCard 
-			    img={teslaImage.src}
-				title="Landing Tesla"
-				description="Clon de la Landing page de Tesla desarrollado con HTML, CSS, JavaScript, Astro y Tailwind."
-				linkGit="https://github.com/LucasSA97/landing-page-tesla"
-				/>
-		</section>
 		</section>
 			
 	</main>

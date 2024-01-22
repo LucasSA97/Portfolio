@@ -2,8 +2,15 @@
 const { message, link, target } = Astro.props
 ---
 
-<a class="link-btn shadow-md" target={target} href={link}>
-    <button class="rounded-md transition-all transform bg-black dark:bg-yellow-400 hover:-translate-y-1  sm:w-24 sm:h-12 md:w-24 md:h-12 lg:w-28 lg:h-12 xl:w-28 xl:h-12">
-        <span class="dark:text-black text-white transition-all text-xs sm:text-sm py-1 px-2 mb-2 sm:mb-0 md:text-lg lg:text-lg  xl:text-lg font-semibold">{message}</span>
+<a  target={target} href={link}>
+    <button class="bg-white/5
+    border dark:border-white/10 border-gray-300
+    rounded-lg
+    inline-flex justify-center items-center gap-x-2
+    py-1 px-2 md:py-2 md:px-4
+    text-xs md:text-base
+    
+    hover:scale-110 hover:bg-white/10">
+        <span>{message}</span>
     </button>
 </a>
