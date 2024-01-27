@@ -1,21 +1,16 @@
 ---
-import Navbar from '../components/Navbar.astro';
-import Title from '../components/Title.astro'
 import SkillCard from '../components/SkillCard.astro'
 import ProjectCard from '../components/ProjectCard.astro'
 import Layout from '../layouts/Layout.astro'
 import '../styles/global.css';
 
-import fireImage from "../assets/fireTask.png"
-import countriesImage from "../assets/ProyectoCountry.webp"
+import ApvCap from "../assets/ApvCap.webp"
 import spotyImage from "../assets/SpotifyClon.webp"
 import theWaveImage from "../assets/Thewave.webp"
 import teslaImage from "../assets/LandingTesta.webp"
 import astroImage from "../assets/CapturaSpaceX.webp"
-
 import fotoMia from "../assets/fotoMia.jpeg"
 import agenciaViajes from "../assets/agenciaviajes.webp"
-
 import react from "../assets/react.svg"
 import tailwind from "../assets/tailwind-css.svg"
 import node from "../assets/nodejs.svg"
@@ -49,6 +44,15 @@ import mongodb from "../assets/mongodb.svg"
 			<!-- <Title text="Mis proyectos"/> -->
 			<p class="mb-27 mt-15 text-center tracking-widest text-5xl bg-black bg-clip-text transition-transform dark:bg-white">Mis Proyectos</p>
 		<section class="flex flex-col gap-y-16">
+
+			<ProjectCard 
+			img={ApvCap.src}
+			title="Administrador de Pacientes"
+			description="Proyecto FullStack de JavaScript. Desarrollado el backend con NodeJs y ExpressJs con simulación de envio email con Mailtrap, base de datos con MongoDB, frontend hecho con React y el estilo con Tailwind, más integración de SweetAlert2."
+			linkGit="https://github.com/LucasSA97/apv-citas"
+			linkWeb="https://apv-front-psi.vercel.app/"
+			name
+			/>
 			<ProjectCard 
 			img={agenciaViajes.src}
 			title="Agencia de Viajes"
@@ -90,22 +94,7 @@ import mongodb from "../assets/mongodb.svg"
 			description="Clon de la Landing page de Tesla desarrollado con HTML, CSS, JavaScript, Astro y Tailwind."
 			linkGit="https://github.com/LucasSA97/landing-page-tesla"
 			/>
-			<ProjectCard 
-			img={fireImage.src}
-			title="FireTasks"
-			description="Proyecto de lista de tareas con autenticación desarrollado con React, testing End to End con Cypress y backend en Firebase."
-			linkGit="https://github.com/LucasSA97/task-list-firebase"
-			linkWeb="https://fir-shop-7d55b.web.app/"
-			name
-			/>
 
-
-			<ProjectCard 
-			img={countriesImage.src}
-			title="Search Country"
-			description="Proyecto individual con todos los paises, paginado, filtrado combinado y creacion de actividades. CRUD desarrollado en el frontend con JavaScript, React y CSS. Backend con Node y Express. Base de datos PostgreSQL"
-			linkGit="https://github.com/LucasSA97/Proyecto-Countries"	
-			/>
 
 		</section>
 		</section>
